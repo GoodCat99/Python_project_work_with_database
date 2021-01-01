@@ -1,5 +1,15 @@
 from Operations import Actions
 
+
+while True:
+    try:
+        f = open('Database.txt','r')
+        f.close()
+        break
+    except:
+        f = open('Database.txt','w+')
+        f.close()
+
 while True:
     print("""
     Hello user! 
